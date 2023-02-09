@@ -30,7 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4522220455354347060
 MonoBehaviour:
@@ -46,8 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaftPrefabs:
   - {fileID: 7994230543621141443, guid: bceda409e29f5d64b94a0af6f5a0d9b4, type: 3}
-  - {fileID: 5590554587989468672, guid: 1507f48a4cd96c34abe566d61aef69e1, type: 3}
-  - {fileID: 8484092716516958210, guid: e066afb7e28c5bf44b3296b3df7ef340, type: 3}
+  - {fileID: 8807361133196910297, guid: b2f0e1b5126bb4c4b940aae41b0dd5d1, type: 3}
+  - {fileID: 1876310111206635759, guid: daec3b9a2deeb74448d5b1bc88b1ec1b, type: 3}
   zSpawn: 0
   shaftLength: 30
   numberOfShaft: 3
