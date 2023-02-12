@@ -10,7 +10,8 @@ public class Playermovements : MonoBehaviour
     private Transform localTrans;
 
     //For WASDMove()
-    public float speed = 10f;
+    public float speed = 0.01f;
+    //public float heavySpeed = 0.1f;
 
     //For MoveForward()
     private float mySpeed = 10f;
@@ -47,6 +48,7 @@ public class Playermovements : MonoBehaviour
 
     void WASDMove()
     {
+        /*
         Vector3 pos = transform.position;
         if (Input.GetKey("w"))
         {
@@ -65,5 +67,13 @@ public class Playermovements : MonoBehaviour
             pos.x += speed * Time.deltaTime;
         }
         transform.position = pos;
+        */
+
+        float xDrection = Input.GetAxis("Horizontal");
+        float zDirection = Input.GetAxis("Vertical");
+
+        Vector3 moveDirection = new Vector3(xDrection, zDirection, 0.0f);
+
+        transform.position += moveDirection * speed;
     }
 }

@@ -6,12 +6,19 @@ public class SlowMo : MonoBehaviour
 {
     public float slowdownFactor = 0.05f;
     public float slowdownLength = 2f;
+    public Camera cam;
 
     // Update is called once per frame
     void Update()
     {
-        Time.timeScale += (1f / slowdownLength) * Time.unscaledDeltaTime;
-        Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            DoSlowmotion();
+            cam.transform.localRotation *= Quaternion.Euler(0, 0, 180);
+            Time.timeScale += (1f / slowdownLength) * Time.unscaledDeltaTime;
+            Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
+            //transform.localRotation *= Quaternion.Euler(0, 0, 180);
+        }
     }
 
     public void DoSlowmotion()
