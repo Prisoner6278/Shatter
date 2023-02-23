@@ -123,12 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!20 &54619836 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 4921819178183972361, guid: 9e554356eed9ec443876a6b048854860,
-    type: 3}
-  m_PrefabInstance: {fileID: 4921819177364914438}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &570911856
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &570911857
 Transform:
   m_ObjectHideFlags: 0
@@ -175,7 +169,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slowdownFactor: 0.05
   slowdownLength: 2
-  cam: {fileID: 54619836}
 --- !u!1 &616120278
 GameObject:
   m_ObjectHideFlags: 0

@@ -47,6 +47,7 @@ public class Gun : MonoBehaviour
                 Shoot();
             }
         }
+        AmmoCount.GetComponent<Text>().text = currentAmmo.ToString();
     }
 
     IEnumerator Reload()
@@ -64,7 +65,6 @@ public class Gun : MonoBehaviour
     {
         muzzleFlash.Play();
         currentAmmo--;
-        AmmoCount.GetComponent<Text>().text = currentAmmo.ToString();
         RaycastHit hit;
         if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {

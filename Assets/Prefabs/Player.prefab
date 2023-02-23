@@ -160,7 +160,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: b06dfa52585c25145a3d9b7abfb8eb66, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -725,6 +725,7 @@ MonoBehaviour:
     type: 3}
   maxAmmo: 25
   reloadTime: 1
+  allowedToShoot: 1
   AmmoCount: {fileID: 2065607903}
 --- !u!1001 &4921819179092177392
 PrefabInstance:
