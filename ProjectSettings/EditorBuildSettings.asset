@@ -4,4 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Shatter_Main.unity
+    guid: cde58d8e79b059544bba15b4170621c2
+  - enabled: 1
+    path: Assets/Scenes/Shatter.unity
+    guid: 527bc723d1f16324b9c36dbf78b26e22
+  - enabled: 1
+    path: Assets/Scenes/GameOverScene.unity
+    guid: 0c0f9ebb8f76f224390149708beae70c
+  m_configObjects: {}
