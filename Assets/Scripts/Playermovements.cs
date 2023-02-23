@@ -29,8 +29,6 @@ public class Playermovements : MonoBehaviour
         MoveForward();
         WASDMove();
         LimitRot();
-
-
     }
 
     void MoveForward()
@@ -48,32 +46,18 @@ public class Playermovements : MonoBehaviour
 
     void WASDMove()
     {
-        /*
-        Vector3 pos = transform.position;
-        if (Input.GetKey("w"))
-        {
-            pos.y += speed * Time.deltaTime;
-        }
-        if (Input.GetKey("s"))
-        {
-            pos.y -= speed * Time.deltaTime;
-        }
-        if (Input.GetKey("a"))
-        {
-            pos.x -= speed * Time.deltaTime;
-        }
-        if (Input.GetKey("d"))
-        {
-            pos.x += speed * Time.deltaTime;
-        }
-        transform.position = pos;
-        */
-
         float xDrection = Input.GetAxis("Horizontal");
         float zDirection = Input.GetAxis("Vertical");
 
         Vector3 moveDirection = new Vector3(xDrection, zDirection, 0.0f);
 
         transform.position += moveDirection * speed;
+        if (Time.timeScale == 0)
+        {
+            speed = 0f;
+        }else if(Time.timeScale > 0)
+        {
+            speed = 0.01f;
+        }
     }
 }

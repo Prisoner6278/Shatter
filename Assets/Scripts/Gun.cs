@@ -17,6 +17,8 @@ public class Gun : MonoBehaviour
     public float reloadTime = 1f;
     private bool isRealoding = false;
 
+    public bool allowedToShoot = true;
+
     [SerializeField] Text AmmoCount;
 
     // Start is called before the first frame update
@@ -28,22 +30,22 @@ public class Gun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (isRealoding)
         {
             return;
         }
-
-        if(Input.GetKeyDown(KeyCode.R) || currentAmmo <= 0)
+        if(Time.timeScale > 0)
         {
-            StartCoroutine(Reload());
-            return;
-        }
+            if (Input.GetKeyDown(KeyCode.R) || currentAmmo <= 0)
+            {
+                StartCoroutine(Reload());
+                return;
+            }
 
-
-        if (Input.GetButtonDown("Fire1"))
-        {
-            Shoot();
+            if (Input.GetButtonDown("Fire1"))
+            {
+                Shoot();
+            }
         }
     }
 

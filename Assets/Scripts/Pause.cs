@@ -5,11 +5,13 @@ using UnityEngine;
 public class Pause : MonoBehaviour
 {
 
-    public static bool GameIsPause = false;
+    public bool GameIsPause = false;
 
     public GameObject pauseUI;
 
     public GameObject crossHairUI;
+
+    public Gun gun;
 
     // Start is called before the first frame update
     void Start()
@@ -39,8 +41,8 @@ public class Pause : MonoBehaviour
         Cursor.visible = false;
         pauseUI.SetActive(false);
         crossHairUI.SetActive(true);
-        Time.timeScale = 1f;
         GameIsPause = false;
+        Time.timeScale = 1f;
     }
 
     void PauseEnabled()
@@ -49,8 +51,8 @@ public class Pause : MonoBehaviour
         Cursor.visible = true;
         pauseUI.SetActive(true);
         crossHairUI.SetActive(false);
-        Time.timeScale = 0f;
         GameIsPause = true;
+        Time.timeScale = 0f;
     }
 
     public void Quit()
