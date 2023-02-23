@@ -9,6 +9,8 @@ public class MouseLook : MonoBehaviour
     public Transform playerBody;
     float xRotation = 0f;
 
+    public Camera cam;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,13 @@ public class MouseLook : MonoBehaviour
     void Update()
     {
         mouse();
+
+
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            
+            cam.transform.localRotation *= Quaternion.Euler(0, 0, 180);
+        }
     }
 
     void mouse()

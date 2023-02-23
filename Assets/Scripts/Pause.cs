@@ -38,10 +38,9 @@ public class Pause : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         pauseUI.SetActive(false);
+        crossHairUI.SetActive(true);
         Time.timeScale = 1f;
         GameIsPause = false;
-        crossHairUI.SetActive(true);
-
     }
 
     void PauseEnabled()
@@ -49,9 +48,9 @@ public class Pause : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         pauseUI.SetActive(true);
+        crossHairUI.SetActive(false);
         Time.timeScale = 0f;
         GameIsPause = true;
-        crossHairUI.SetActive(false);
     }
 
     public void Quit()

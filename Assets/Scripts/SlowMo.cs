@@ -14,11 +14,10 @@ public class SlowMo : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.B))
         {
             DoSlowmotion();
-            cam.transform.localRotation *= Quaternion.Euler(0, 0, 180);
-            Time.timeScale += (1f / slowdownLength) * Time.unscaledDeltaTime;
-            Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
             //transform.localRotation *= Quaternion.Euler(0, 0, 180);
         }
+        Time.timeScale += (1f / slowdownLength) * Time.unscaledDeltaTime;
+        Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
     }
 
     public void DoSlowmotion()
