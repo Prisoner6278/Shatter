@@ -19,6 +19,12 @@ public class Gun : MonoBehaviour
 
     public bool allowedToShoot = true;
 
+    public TrailRenderer tracerEffect;
+    public Transform raycastOrigin;
+    public Transform raycastDestination;
+
+    Ray ray;
+
     [SerializeField] Text AmmoCount;
 
     // Start is called before the first frame update
@@ -34,7 +40,7 @@ public class Gun : MonoBehaviour
         {
             return;
         }
-        if(Time.timeScale > 0)
+        if (Time.timeScale > 0)
         {
             if (Input.GetKeyDown(KeyCode.R) || currentAmmo <= 0)
             {
@@ -63,10 +69,16 @@ public class Gun : MonoBehaviour
 
     void Shoot()
     {
+        ray.origin = raycastOrigin.position;
+        ray.direction = raycastDestination.position = raycastOrigin.position;
+
+        var tracer = Instantiate(tracerEffect, ray.origin, Quaternion.identity);
+        tracer.AddPosition(ray.origin);
+
         muzzleFlash.Play();
         currentAmmo--;
         RaycastHit hit;
-        if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
             Target target = hit.transform.GetComponent<Target>();
             if (target != null)
@@ -74,6 +86,7 @@ public class Gun : MonoBehaviour
                 target.TakeDamage(damage);
             }
             Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+            tracer.transform.position = hit.point;
         }
     }
 
