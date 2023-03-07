@@ -1157,6 +1157,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4522220455354347060, guid: b8a60c319d0651a48817220e29d74ac7,
         type: 3}
+      propertyPath: shaftLength
+      value: 36.4953
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522220455354347060, guid: b8a60c319d0651a48817220e29d74ac7,
+        type: 3}
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 1325849192}
@@ -1164,13 +1169,13 @@ PrefabInstance:
         type: 3}
       propertyPath: ShaftPrefabs.Array.data[1]
       value: 
-      objectReference: {fileID: 5427651102382997099, guid: b901df30ee4ad794298619e11059bb7e,
+      objectReference: {fileID: 7937773905837907466, guid: 70ee0950ecdb7b446a076ee4cc2a7622,
         type: 3}
     - target: {fileID: 4522220455354347060, guid: b8a60c319d0651a48817220e29d74ac7,
         type: 3}
       propertyPath: ShaftPrefabs.Array.data[2]
       value: 
-      objectReference: {fileID: 7937773905837907466, guid: 70ee0950ecdb7b446a076ee4cc2a7622,
+      objectReference: {fileID: 659035746178304944, guid: 934d6e628378b704aa0b2e0e176d9ec4,
         type: 3}
     - target: {fileID: 4522220455354347061, guid: b8a60c319d0651a48817220e29d74ac7,
         type: 3}
