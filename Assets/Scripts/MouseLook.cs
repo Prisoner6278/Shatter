@@ -9,11 +9,17 @@ public class MouseLook : MonoBehaviour
     public Transform playerBody;
     float xRotation = 0f;
 
-    public Camera cam;
+    public Camera cam1;
+    public Camera cam2;
+
+    public float slowdownFactor = 0.05f;
+    public float slowdownLength = 2f;
 
     // Start is called before the first frame update
     void Start()
     {
+        cam1.enabled = true;
+        cam2.enabled = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -25,8 +31,16 @@ public class MouseLook : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.B))
         {
-            
-            cam.transform.localRotation *= Quaternion.Euler(0, 0, 180);
+            DoSlowmotion();
+            cam1.enabled = false;
+            cam2.enabled = true;
+           
+        }
+        ReStoreTime();
+        if (Input.GetKeyUp(KeyCode.B))
+        {
+            cam1.enabled = true;
+            cam2.enabled = false;
         }
     }
 
@@ -40,5 +54,17 @@ public class MouseLook : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         playerBody.Rotate(Vector3.up * mouseX);
+    }
+
+    public void DoSlowmotion()
+    {
+        Time.timeScale = slowdownFactor;
+        Time.fixedDeltaTime = Time.timeScale * .02f;
+    }
+
+    public void ReStoreTime()
+    {
+        Time.timeScale += (1f / slowdownLength) * Time.unscaledDeltaTime;
+        Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
     }
 }
