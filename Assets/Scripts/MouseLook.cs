@@ -15,6 +15,8 @@ public class MouseLook : MonoBehaviour
     public float slowdownFactor = 0.05f;
     public float slowdownLength = 2f;
 
+    public bool InSlowMo;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,15 +30,18 @@ public class MouseLook : MonoBehaviour
     {
         mouse();
 
+        if (InSlowMo == true)
+        {
+            ReStoreTime();
+        }
 
         if (Input.GetKeyDown(KeyCode.B))
         {
             DoSlowmotion();
             cam1.enabled = false;
             cam2.enabled = true;
-           
         }
-        ReStoreTime();
+
         if (Input.GetKeyUp(KeyCode.B))
         {
             cam1.enabled = true;
@@ -60,11 +65,16 @@ public class MouseLook : MonoBehaviour
     {
         Time.timeScale = slowdownFactor;
         Time.fixedDeltaTime = Time.timeScale * .02f;
+        InSlowMo = true;
     }
 
     public void ReStoreTime()
     {
         Time.timeScale += (1f / slowdownLength) * Time.unscaledDeltaTime;
         Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
+        if (Time.timeScale == 1.0f)
+        {
+            InSlowMo = false;
+        }
     }
 }

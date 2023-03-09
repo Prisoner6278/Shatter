@@ -37,22 +37,22 @@ public class Pause : MonoBehaviour
 
     public void Resume()
     {
+        Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         pauseUI.SetActive(false);
         crossHairUI.SetActive(true);
         GameIsPause = false;
-        Time.timeScale = 1f;
     }
 
     void PauseEnabled()
     {
+        Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         pauseUI.SetActive(true);
         crossHairUI.SetActive(false);
         GameIsPause = true;
-        Time.timeScale = 0f;
     }
 
     public void Quit()
