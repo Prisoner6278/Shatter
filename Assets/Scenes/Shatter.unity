@@ -416,6 +416,21 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 818487569281686800, guid: 788f83a52a8f09d4d9310d7452caba3f,
+        type: 3}
+      propertyPath: sfxSounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 818487569281686800, guid: 788f83a52a8f09d4d9310d7452caba3f,
+        type: 3}
+      propertyPath: sfxSounds.Array.data[0].name
+      value: GunFireSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 818487569281686800, guid: 788f83a52a8f09d4d9310d7452caba3f,
+        type: 3}
+      propertyPath: sfxSounds.Array.data[1].name
+      value: Reload
+      objectReference: {fileID: 0}
     - target: {fileID: 818487569281686801, guid: 788f83a52a8f09d4d9310d7452caba3f,
         type: 3}
       propertyPath: m_Name

@@ -174,9 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11183a9be0f2d3a4799dc2ff5eb6c427, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSounds:
-  - name: Theme
-    clip: {fileID: 8300000, guid: f1096327d9d8b134ca9bc19eafc5245c, type: 3}
+  musicSounds: []
   sfxSounds: []
   musicSource: {fileID: 818487570363459739}
   sfxSource: {fileID: 818487569004891306}
@@ -222,7 +220,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0c5a42bfdd87ad14888aa405fe95d66d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.1
   m_Pitch: 1
