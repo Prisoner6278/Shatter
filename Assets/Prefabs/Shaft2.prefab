@@ -1307,6 +1307,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Glass
       objectReference: {fileID: 0}
+    - target: {fileID: 895766723196780495, guid: d7ee4b81d0ab7d641a4b6232bd257a43,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8921067418539913109, guid: d7ee4b81d0ab7d641a4b6232bd257a43,
         type: 3}
       propertyPath: m_RootOrder
