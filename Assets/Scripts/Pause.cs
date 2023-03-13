@@ -38,6 +38,8 @@ public class Pause : MonoBehaviour
     public void Resume()
     {
         Time.timeScale = 1f;
+        AudioManager.Instance.ResumeMusic("Theme");
+        AudioManager.Instance.LoopSFX("SkyDiving");
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         pauseUI.SetActive(false);
@@ -48,6 +50,8 @@ public class Pause : MonoBehaviour
     void PauseEnabled()
     {
         Time.timeScale = 0f;
+        AudioManager.Instance.PauseMusic("Theme");
+        AudioManager.Instance.StopSFXLoop("SkyDiving");
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         pauseUI.SetActive(true);

@@ -55,6 +55,16 @@ public class AudioManager : MonoBehaviour
         musicSource.Stop();
     }
 
+    public void PauseMusic(string name)
+    {
+        musicSource.Pause();
+    }
+
+    public void ResumeMusic(string name)
+    {
+        musicSource.UnPause();
+    }
+
     public void PlaySFX(string name)
     {
         Sound s = Array.Find(sfxSounds, x => x.name == name);
