@@ -19,6 +19,7 @@ public class GameOver : MonoBehaviour
     public void Retry()
     {
         //ClickSound.Play();
+        AudioManager.Instance.PlayMusic("Theme");
         SceneManager.LoadScene("Shatter");
     }
 

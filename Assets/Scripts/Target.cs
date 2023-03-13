@@ -13,7 +13,6 @@ public class Target : MonoBehaviour
     void Start()
     {
         glassBreak = GetComponent<AudioSource>();
-
     }
 
     // Update is called once per frame
@@ -42,6 +41,8 @@ public class Target : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            AudioManager.Instance.StopMusic("Theme");
+            AudioManager.Instance.StopSFXLoop("SkyDiving");
             SceneManager.LoadScene("GameOverScene");
         }
     }

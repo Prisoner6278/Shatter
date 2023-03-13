@@ -24,6 +24,8 @@ public class Timer : MonoBehaviour
         countdownText.text = currentTime.ToString("0");
         if(currentTime <= 0)
         {
+            AudioManager.Instance.StopMusic("Theme");
+            AudioManager.Instance.StopSFXLoop("SkyDiving");
             SceneManager.LoadScene("Shatter_Win");
         }
 

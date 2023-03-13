@@ -46,9 +46,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaftPrefabs:
   - {fileID: 5427651102382997099, guid: b901df30ee4ad794298619e11059bb7e, type: 3}
-  - {fileID: 5427651102382997099, guid: b901df30ee4ad794298619e11059bb7e, type: 3}
-  - {fileID: 5427651102382997099, guid: b901df30ee4ad794298619e11059bb7e, type: 3}
+  - {fileID: 7937773905837907466, guid: 70ee0950ecdb7b446a076ee4cc2a7622, type: 3}
+  - {fileID: 659035746178304944, guid: 934d6e628378b704aa0b2e0e176d9ec4, type: 3}
+  - {fileID: 5835792277348063049, guid: bec96d04cf930d34db8432f7fe8fe29b, type: 3}
+  - {fileID: 5303577933120740434, guid: 5c6ea2052ec618646a9f5a10585ca492, type: 3}
   zSpawn: -10
-  shaftLength: 30
+  shaftLength: 36.4953
   numberOfShaft: 20
   playerTransform: {fileID: 0}

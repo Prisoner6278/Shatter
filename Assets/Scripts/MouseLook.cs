@@ -17,6 +17,8 @@ public class MouseLook : MonoBehaviour
 
     public bool InSlowMo;
 
+    public float timeScaleNum;
+
     // Start is called before the first frame update
     void Start()
     {

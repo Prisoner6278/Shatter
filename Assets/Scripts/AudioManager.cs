@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class AudioManager : MonoBehaviour
 
     private void Awake()
     {
+
         if (Instance == null)
         {
             Instance = this;
@@ -26,6 +28,7 @@ public class AudioManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        
     }
 
     private void Start()
@@ -47,6 +50,11 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void StopMusic(string name)
+    {
+        musicSource.Stop();
+    }
+
     public void PlaySFX(string name)
     {
         Sound s = Array.Find(sfxSounds, x => x.name == name);
@@ -58,5 +66,15 @@ public class AudioManager : MonoBehaviour
         {
             sfxSource.PlayOneShot(s.clip);
         }
+    }
+
+    public void LoopSFX(string name)
+    {
+        sfxSource.loop = true;
+    }
+
+    public void StopSFXLoop(string name)
+    {
+        sfxSource.loop = false;
     }
 }

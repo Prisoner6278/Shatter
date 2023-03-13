@@ -174,8 +174,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11183a9be0f2d3a4799dc2ff5eb6c427, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSounds: []
-  sfxSounds: []
+  musicSounds:
+  - name: Theme
+    clip: {fileID: 8300000, guid: 0c5a42bfdd87ad14888aa405fe95d66d, type: 3}
+  sfxSounds:
+  - name: GunFireSound
+    clip: {fileID: 8300000, guid: a13c0df9cd48ebf42b710df607dcb8f3, type: 3}
+  - name: Reload
+    clip: {fileID: 8300000, guid: 42d6a0397a029114888234cbe3cc86d2, type: 3}
+  - name: SkyDiving
+    clip: {fileID: 8300000, guid: 337ccb64a9443a24eb9faa7368ffec99, type: 3}
   musicSource: {fileID: 818487570363459739}
   sfxSource: {fileID: 818487569004891306}
 --- !u!1 &818487570363459737
@@ -220,7 +228,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0c5a42bfdd87ad14888aa405fe95d66d, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.1
   m_Pitch: 1
