@@ -10,11 +10,11 @@ public class Playermovements : MonoBehaviour
     private Transform localTrans;
 
     //For WASDMove()
-    public float speed = 0.01f;
+    public float speed;
     //public float heavySpeed = 0.1f;
 
     //For MoveForward()
-    private float mySpeed = 10f;
+    public float mySpeed;
 
     // Start is called before the first frame update
     void Start()
