@@ -423,13 +423,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 818487569281686800, guid: 788f83a52a8f09d4d9310d7452caba3f,
         type: 3}
+      propertyPath: musicSounds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 818487569281686800, guid: 788f83a52a8f09d4d9310d7452caba3f,
+        type: 3}
+      propertyPath: sfxSounds.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: a13c0df9cd48ebf42b710df607dcb8f3, type: 3}
+    - target: {fileID: 818487569281686800, guid: 788f83a52a8f09d4d9310d7452caba3f,
+        type: 3}
       propertyPath: sfxSounds.Array.data[0].name
       value: GunFireSound
       objectReference: {fileID: 0}
     - target: {fileID: 818487569281686800, guid: 788f83a52a8f09d4d9310d7452caba3f,
         type: 3}
+      propertyPath: sfxSounds.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 42d6a0397a029114888234cbe3cc86d2, type: 3}
+    - target: {fileID: 818487569281686800, guid: 788f83a52a8f09d4d9310d7452caba3f,
+        type: 3}
       propertyPath: sfxSounds.Array.data[1].name
       value: Reload
+      objectReference: {fileID: 0}
+    - target: {fileID: 818487569281686800, guid: 788f83a52a8f09d4d9310d7452caba3f,
+        type: 3}
+      propertyPath: musicSounds.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0c5a42bfdd87ad14888aa405fe95d66d, type: 3}
+    - target: {fileID: 818487569281686800, guid: 788f83a52a8f09d4d9310d7452caba3f,
+        type: 3}
+      propertyPath: musicSounds.Array.data[0].name
+      value: Theme
       objectReference: {fileID: 0}
     - target: {fileID: 818487569281686801, guid: 788f83a52a8f09d4d9310d7452caba3f,
         type: 3}
@@ -490,6 +515,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 818487570363459739, guid: 788f83a52a8f09d4d9310d7452caba3f,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

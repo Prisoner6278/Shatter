@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 112
+  controlID: 58
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 440
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 47
+  controlID: 59
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -318,22 +318,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Music/SFX
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Music/SFX
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\qnyt\Desktop\Shatter\Shatter
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 34}
-    m_SelectedIDs: b2a40000
-    m_LastClickedID: 42162
-    m_ExpandedIDs: 00000000a0a4000000ca9a3b
+    scrollPos: {x: 0, y: 94}
+    m_SelectedIDs: c4690000
+    m_LastClickedID: 27076
+    m_ExpandedIDs: 00000000c2680000fa68000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -361,7 +361,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 00000000c2680000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -491,9 +491,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 54bdffff
-      m_LastClickedID: -17068
-      m_ExpandedIDs: f4bcffff56bdffff649f0000
+      m_SelectedIDs: ccf7ffff
+      m_LastClickedID: -2100
+      m_ExpandedIDs: 82f7ffffd2f7ffffd4f7ffffce5f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -798,9 +798,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 3.7309723, y: 5.5858192, z: 39.575195}
+    m_Target: {x: 7.257683, y: 15.184269, z: 29.826578}
     speed: 2
-    m_Value: {x: 3.7309723, y: 5.5858192, z: 39.575195}
+    m_Value: {x: 7.257683, y: 15.184269, z: 29.826578}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -846,13 +846,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.1887075, y: 0.7356322, z: -0.22780897, w: 0.60937643}
+    m_Target: {x: 0.1417134, y: 0.7803202, z: -0.19121496, w: 0.57832116}
     speed: 2
-    m_Value: {x: 0.18836541, y: 0.73654485, z: -0.22809158, w: 0.6082718}
+    m_Value: {x: 0.14171332, y: 0.78031987, z: -0.19121487, w: 0.57832086}
   m_Size:
     m_Target: 46.673473
     speed: 2
-    m_Value: 44.663612
+    m_Value: 46.673473
   m_Ortho:
     m_Target: 0
     speed: 2

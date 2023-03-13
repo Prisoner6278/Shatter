@@ -44,12 +44,14 @@ public class Gun : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.R) || currentAmmo <= 0)
             {
+                AudioManager.Instance.PlaySFX("Reload");
                 StartCoroutine(Reload());
                 return;
             }
 
             if (Input.GetButtonDown("Fire1"))
             {
+                AudioManager.Instance.PlaySFX("GunFireSound");
                 Shoot();
             }
         }
