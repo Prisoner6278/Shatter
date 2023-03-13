@@ -822,7 +822,7 @@ Transform:
   - {fileID: 778643221}
   - {fileID: 565312061}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &4921819177423173237
 CapsuleCollider:
@@ -852,8 +852,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxYRot: 20
   minYRot: -20
-  speed: 70
-  mySpeed: 0
+  speed: 0.1
+  mySpeed: 8
 --- !u!54 &919210730
 Rigidbody:
   m_ObjectHideFlags: 0

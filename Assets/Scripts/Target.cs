@@ -5,14 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class Target : MonoBehaviour
 {
-    AudioSource glassBreak; 
+    public AudioSource glassBreak;
 
     public float health = 50f;
 
     // Start is called before the first frame update
     void Start()
     {
-        glassBreak = GetComponent<AudioSource>();
+        //glassBreak = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class Target : MonoBehaviour
         health -= amount;
         if (health <= 0f)
         {
-            glassBreak.Play();
+            AudioManager.Instance.PlaySFX("GlassBreak");
             Die();
             Debug.Log("glass broken");
         }

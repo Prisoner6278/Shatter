@@ -35,6 +35,7 @@ public class Playermovements : MonoBehaviour
     {
         gameObject.transform.Translate(Vector3.forward * mySpeed * Time.deltaTime, Space.World);
         AudioManager.Instance.LoopSFX("SkyDiving");
+        AudioManager.Instance.LoopSFX("continuousGlassShattering");
     }
 
     void LimitRot()

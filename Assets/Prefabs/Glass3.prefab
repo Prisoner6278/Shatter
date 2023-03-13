@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c20f15deecfd54981eb588cc109ad3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glassBreak: {fileID: 1635181158889336966}
   health: 50
 --- !u!82 &1635181158889336966
 AudioSource:
@@ -133,7 +134,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 2.7629697
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -221,6 +222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c20f15deecfd54981eb588cc109ad3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glassBreak: {fileID: 0}
   health: 50
 --- !u!1 &6162586974649728686
 GameObject:
@@ -369,6 +371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c20f15deecfd54981eb588cc109ad3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glassBreak: {fileID: 4394211793855065747}
   health: 90
 --- !u!82 &4394211793855065747
 AudioSource:
@@ -390,7 +393,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 3.6004884
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -478,6 +481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c20f15deecfd54981eb588cc109ad3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glassBreak: {fileID: 0}
   health: 90
 --- !u!1 &8016508594063295309
 GameObject:
@@ -591,6 +595,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c20f15deecfd54981eb588cc109ad3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glassBreak: {fileID: 7179984528603717028}
   health: 70
 --- !u!82 &7179984528603717028
 AudioSource:
@@ -612,7 +617,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 3.0424325
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -700,6 +705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c20f15deecfd54981eb588cc109ad3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glassBreak: {fileID: 0}
   health: 70
 --- !u!1 &9090019113068815814
 GameObject:
@@ -813,6 +819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c20f15deecfd54981eb588cc109ad3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glassBreak: {fileID: 8014218659551727776}
   health: 30
 --- !u!82 &8014218659551727776
 AudioSource:
@@ -834,7 +841,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 3.3186107
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -922,4 +929,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c20f15deecfd54981eb588cc109ad3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glassBreak: {fileID: 0}
   health: 30

@@ -44,7 +44,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -160,7 +160,7 @@ Transform:
   - {fileID: 818487570363459736}
   - {fileID: 818487569004891317}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &818487569281686800
 MonoBehaviour:
@@ -184,6 +184,10 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 42d6a0397a029114888234cbe3cc86d2, type: 3}
   - name: SkyDiving
     clip: {fileID: 8300000, guid: 337ccb64a9443a24eb9faa7368ffec99, type: 3}
+  - name: GlassBreak
+    clip: {fileID: 8300000, guid: 7b873f627b2d89d4cbe8706718b04d3d, type: 3}
+  - name: continuousGlassShattering
+    clip: {fileID: 8300000, guid: 72780b4fcaa889941b54226452512279, type: 3}
   musicSource: {fileID: 818487570363459739}
   sfxSource: {fileID: 818487569004891306}
 --- !u!1 &818487570363459737
@@ -230,7 +234,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0

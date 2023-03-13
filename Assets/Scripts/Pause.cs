@@ -45,6 +45,7 @@ public class Pause : MonoBehaviour
         Time.timeScale = 1f;
         AudioManager.Instance.ResumeMusic("Theme");
         AudioManager.Instance.LoopSFX("SkyDiving");
+        AudioManager.Instance.LoopSFX("continuousGlassShattering");
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         pauseUI.SetActive(false);
@@ -62,6 +63,7 @@ public class Pause : MonoBehaviour
         Time.timeScale = 0f;
         AudioManager.Instance.PauseMusic("Theme");
         AudioManager.Instance.StopSFXLoop("SkyDiving");
+        AudioManager.Instance.StopSFXLoop("continuousGlassShattering");
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         pauseUI.SetActive(true);

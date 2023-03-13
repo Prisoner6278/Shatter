@@ -111,6 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c20f15deecfd54981eb588cc109ad3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glassBreak: {fileID: 2655445789168845849}
   health: 50
 --- !u!82 &2655445789168845849
 AudioSource:
@@ -132,7 +133,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.9312222
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -319,6 +320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c20f15deecfd54981eb588cc109ad3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glassBreak: {fileID: 6724828693079172159}
   health: 30
 --- !u!82 &6724828693079172159
 AudioSource:
@@ -340,7 +342,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.7525624
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -527,6 +529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c20f15deecfd54981eb588cc109ad3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glassBreak: {fileID: 5894983878599010619}
   health: 70
 --- !u!82 &5894983878599010619
 AudioSource:
@@ -548,7 +551,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.7191297
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -770,6 +773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c20f15deecfd54981eb588cc109ad3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glassBreak: {fileID: 1049405927807375884}
   health: 90
 --- !u!82 &1049405927807375884
 AudioSource:
@@ -791,7 +795,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.8294762
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
