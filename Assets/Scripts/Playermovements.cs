@@ -14,7 +14,7 @@ public class Playermovements : MonoBehaviour
     //public float heavySpeed = 0.1f;
 
     //For MoveForward()
-    private float mySpeed = 10f;
+    public float mySpeed = 10f;
 
     // Start is called before the first frame update
     void Start()
