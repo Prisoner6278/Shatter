@@ -660,6 +660,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4522220455354347060, guid: b8a60c319d0651a48817220e29d74ac7,
         type: 3}
+      propertyPath: zSpawn
+      value: -1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4522220455354347060, guid: b8a60c319d0651a48817220e29d74ac7,
+        type: 3}
       propertyPath: shaftLength
       value: 36.4953
       objectReference: {fileID: 0}
@@ -768,11 +773,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1335383253, guid: 9e554356eed9ec443876a6b048854860, type: 3}
-      propertyPath: impactEffect
-      value: 
-      objectReference: {fileID: 8447954816405800759, guid: c110eb0611597084e9f876da98fba11b,
-        type: 3}
     - target: {fileID: 4921819177423173234, guid: 9e554356eed9ec443876a6b048854860,
         type: 3}
       propertyPath: m_RootOrder
