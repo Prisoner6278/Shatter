@@ -822,7 +822,7 @@ Transform:
   - {fileID: 778643221}
   - {fileID: 565312061}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &4921819177423173237
 CapsuleCollider:
@@ -834,8 +834,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2.112081
+  m_Radius: 0.3
+  m_Height: 1.5
   m_Direction: 1
   m_Center: {x: 0, y: -0.03292823, z: 0}
 --- !u!114 &4921819177423173236
@@ -852,7 +852,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxYRot: 20
   minYRot: -20
-  speed: 5
+  speed: 10
 --- !u!54 &919210730
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -974,7 +974,7 @@ MonoBehaviour:
   slowdownFactor: 0.05
   slowdownLength: 2
   InSlowMo: 0
-  timeScaleNum: 0
+  currentTimeScale: 0
 --- !u!1 &4921819179370561002
 GameObject:
   m_ObjectHideFlags: 0
