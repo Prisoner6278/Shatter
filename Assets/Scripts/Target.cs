@@ -26,8 +26,8 @@ public class Target : MonoBehaviour
         health -= amount;
         if (health <= 0f)
         {
-            Die();
             glassBreak.Play();
+            Die();
             Debug.Log("glass broken");
         }
     }
