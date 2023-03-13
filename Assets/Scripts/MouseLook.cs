@@ -17,7 +17,7 @@ public class MouseLook : MonoBehaviour
 
     public bool InSlowMo;
 
-    public float timeScaleNum;
+    public float currentTimeScale;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +30,8 @@ public class MouseLook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        currentTimeScale = Time.timeScale;
+
         mouse();
 
         if (InSlowMo == true)

@@ -11,12 +11,12 @@ public class Pause : MonoBehaviour
 
     public GameObject crossHairUI;
 
-    public MouseLook look;
+    MouseLook look;
 
     // Start is called before the first frame update
     void Start()
     {
-       
+        look = GameObject.Find("CameraFront").GetComponent<MouseLook>();
     }
 
     // Update is called once per frame
@@ -37,6 +37,11 @@ public class Pause : MonoBehaviour
 
     public void Resume()
     {
+        if(look.currentTimeScale < 0)
+        {
+            Time.timeScale = look.currentTimeScale;
+            look.InSlowMo = true;
+        }
         Time.timeScale = 1f;
         AudioManager.Instance.ResumeMusic("Theme");
         AudioManager.Instance.LoopSFX("SkyDiving");
@@ -49,6 +54,11 @@ public class Pause : MonoBehaviour
 
     void PauseEnabled()
     {
+        if (Time.timeScale < 0)
+        {
+            look.currentTimeScale = Time.timeScale;
+        }
+        look.InSlowMo = false;
         Time.timeScale = 0f;
         AudioManager.Instance.PauseMusic("Theme");
         AudioManager.Instance.StopSFXLoop("SkyDiving");
